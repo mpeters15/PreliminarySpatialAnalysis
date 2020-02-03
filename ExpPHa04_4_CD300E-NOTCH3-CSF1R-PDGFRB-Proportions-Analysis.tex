@@ -1,0 +1,309 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={ExpPHa04\_4\_CSF1R-PDGFRB-Proportions-Analysis},
+            pdfauthor={Michael Peters},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{ExpPHa04\_4\_CSF1R-PDGFRB-Proportions-Analysis}
+\author{Michael Peters}
+\date{2/3/2020}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{rm}\NormalTok{(}\DataTypeTok{list=}\KeywordTok{ls}\NormalTok{())}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{load-packages}{%
+\subsubsection{Load packages}\label{load-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(readr)}
+\KeywordTok{library}\NormalTok{(ggplot2)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\hypertarget{set-working-directory}{%
+\subsubsection{Set working directory}\label{set-working-directory}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{setwd}\NormalTok{(}\StringTok{"/Volumes/GoogleDrive/My Drive/20_jan_23_spatial_analysis/Halo archive 2020-01-23 19-17 - v3.0.311"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{import-data}{%
+\subsubsection{Import data}\label{import-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df <-}\StringTok{ }\KeywordTok{read_csv}\NormalTok{(}\StringTok{"ExpPHa04_4_CD300E-NOTCH3-CSF1R-PDGFRB.tif_1501_job2985.object_results.csv"}\NormalTok{, }
+    \DataTypeTok{col_types =} \KeywordTok{cols}\NormalTok{(}\StringTok{`}\DataTypeTok{Object Id}\StringTok{`}\NormalTok{ =}\StringTok{ }\KeywordTok{col_integer}\NormalTok{(), }
+        \StringTok{`}\DataTypeTok{Opal 620 Classification}\StringTok{`}\NormalTok{ =}\StringTok{ }\KeywordTok{col_integer}\NormalTok{(), }
+        \StringTok{`}\DataTypeTok{Opal 690 Classification}\StringTok{`}\NormalTok{ =}\StringTok{ }\KeywordTok{col_integer}\NormalTok{()))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{select-data-of-interest-and-rename-columns}{%
+\subsubsection{Select data of interest and rename
+columns}\label{select-data-of-interest-and-rename-columns}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{ <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(df}\OperatorTok{$}\StringTok{`}\DataTypeTok{Object Id}\StringTok{`}\NormalTok{, df}\OperatorTok{$}\StringTok{`}\DataTypeTok{Opal 620 Classification}\StringTok{`}\NormalTok{, df}\OperatorTok{$}\StringTok{`}\DataTypeTok{Opal 690 Classification}\StringTok{`}\NormalTok{)}
+\KeywordTok{colnames}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{) <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Object_ID"}\NormalTok{, }\StringTok{"620_Classification"}\NormalTok{, }\StringTok{"690_Classification"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{subset-mixed-data}{%
+\subsubsection{Subset mixed data}\label{subset-mixed-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mixed_}\DecValTok{3}\NormalTok{_}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{))}
+\NormalTok{mixed_}\DecValTok{3}\NormalTok{_}\DecValTok{4}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{))}
+\NormalTok{mixed_}\DecValTok{4}\NormalTok{_}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{))}
+\NormalTok{mixed_}\DecValTok{4}\NormalTok{_}\DecValTok{4}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{))}
+
+\NormalTok{mixedFrame <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(mixed_}\DecValTok{3}\NormalTok{_}\DecValTok{3}\NormalTok{, mixed_}\DecValTok{3}\NormalTok{_}\DecValTok{4}\NormalTok{, mixed_}\DecValTok{4}\NormalTok{_}\DecValTok{3}\NormalTok{, mixed_}\DecValTok{4}\NormalTok{_}\DecValTok{4}\NormalTok{)}
+\NormalTok{mixedFrame[}\StringTok{'Type'}\NormalTok{]=}\StringTok{'mixed'}
+\NormalTok{mixedTotal <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(mixedFrame)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{subset-myeloid-data}{%
+\subsubsection{Subset myeloid data}\label{subset-myeloid-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myel_}\DecValTok{3}\NormalTok{_}\DecValTok{0}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\NormalTok{myel_}\DecValTok{3}\NormalTok{_}\DecValTok{1}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{))}
+\NormalTok{myel_}\DecValTok{4}\NormalTok{_}\DecValTok{0}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\NormalTok{myel_}\DecValTok{4}\NormalTok{_}\DecValTok{1}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{))}
+\NormalTok{myel_}\DecValTok{4}\NormalTok{_}\DecValTok{2}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{))}
+
+\NormalTok{myelFrame <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(myel_}\DecValTok{3}\NormalTok{_}\DecValTok{0}\NormalTok{, myel_}\DecValTok{3}\NormalTok{_}\DecValTok{1}\NormalTok{, myel_}\DecValTok{4}\NormalTok{_}\DecValTok{0}\NormalTok{, myel_}\DecValTok{4}\NormalTok{_}\DecValTok{1}\NormalTok{, myel_}\DecValTok{4}\NormalTok{_}\DecValTok{2}\NormalTok{)}
+\NormalTok{myelFrame[}\StringTok{'Type'}\NormalTok{]=}\StringTok{'myeloid'}
+\NormalTok{myelTotal <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(myelFrame)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{subset-fibroblast-data}{%
+\subsubsection{Subset fibroblast data}\label{subset-fibroblast-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fibro_}\DecValTok{0}\NormalTok{_}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{))}
+\NormalTok{fibro_}\DecValTok{0}\NormalTok{_}\DecValTok{4}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{))}
+\NormalTok{fibro_}\DecValTok{1}\NormalTok{_}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{))}
+\NormalTok{fibro_}\DecValTok{1}\NormalTok{_}\DecValTok{4}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{))}
+\NormalTok{fibro_}\DecValTok{2}\NormalTok{_}\DecValTok{4}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{4}\NormalTok{))}
+
+\NormalTok{fibroFrame <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(fibro_}\DecValTok{0}\NormalTok{_}\DecValTok{3}\NormalTok{, fibro_}\DecValTok{0}\NormalTok{_}\DecValTok{4}\NormalTok{, fibro_}\DecValTok{1}\NormalTok{_}\DecValTok{3}\NormalTok{, fibro_}\DecValTok{1}\NormalTok{_}\DecValTok{4}\NormalTok{, fibro_}\DecValTok{2}\NormalTok{_}\DecValTok{4}\NormalTok{)}
+\NormalTok{fibroFrame[}\StringTok{'Type'}\NormalTok{]=}\StringTok{'fibroblast'}
+\NormalTok{fibroTotal <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(fibroFrame)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{subset-unclassified-data}{%
+\subsubsection{Subset unclassified
+data}\label{subset-unclassified-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{0}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{1}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{2}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{0}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{1}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{2}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{2}\NormalTok{_}\DecValTok{0}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{2}\NormalTok{_}\DecValTok{1}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{2}\NormalTok{_}\DecValTok{2}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{2}\NormalTok{_}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{))}
+\NormalTok{unclassified_}\DecValTok{3}\NormalTok{_}\DecValTok{2}\NormalTok{ <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\NormalTok{, (df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{620_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{3}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{(df_}\DecValTok{620}\NormalTok{_}\DecValTok{690}\OperatorTok{$}\StringTok{`}\DataTypeTok{690_Classification}\StringTok{`} \OperatorTok{==}\StringTok{ }\DecValTok{2}\NormalTok{))}
+
+\NormalTok{unclassifiedFrame <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{0}\NormalTok{, unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{1}\NormalTok{, unclassified_}\DecValTok{0}\NormalTok{_}\DecValTok{2}\NormalTok{, unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{0}\NormalTok{, unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{1}\NormalTok{, unclassified_}\DecValTok{1}\NormalTok{_}\DecValTok{2}\NormalTok{, unclassified_}\DecValTok{2}\NormalTok{_}\DecValTok{1}\NormalTok{)}
+\NormalTok{unclassifiedFrame[}\StringTok{'Type'}\NormalTok{]=}\StringTok{'unclassified'}
+\NormalTok{unclassifiedTotal <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(unclassifiedFrame)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{summary-results}{%
+\subsubsection{Summary results}\label{summary-results}}
+
+Total number of myeloid cells: 746
+
+Total number of fibroblast cells: 3080
+
+Total number of mixed cells: 382
+
+Total number of unclassified cells: 12013
+
+Total number of subsetted lists: 16
+
+\hypertarget{plot-data}{%
+\subsubsection{Plot data}\label{plot-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cellCountsOveralldf <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(myelFrame, fibroFrame, mixedFrame)}
+
+\NormalTok{cellCountsOverall <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}
+    \DataTypeTok{type=}\KeywordTok{c}\NormalTok{(}\StringTok{"Myeloid"}\NormalTok{, }\StringTok{"Fibroblast"}\NormalTok{, }\StringTok{"Mixed"}\NormalTok{, }\StringTok{"Unclassified"}\NormalTok{),}
+    \DataTypeTok{count=}\KeywordTok{c}\NormalTok{(myelTotal, fibroTotal, mixedTotal, unclassifiedTotal)}
+\NormalTok{    )}
+\KeywordTok{rownames}\NormalTok{(cellCountsOverall) <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Myeloid"}\NormalTok{, }\StringTok{"Fibroblast"}\NormalTok{, }\StringTok{"Mixed"}\NormalTok{, }\StringTok{"Unclassified"}\NormalTok{)}
+
+\NormalTok{drops <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Unclassified"}\NormalTok{)}
+\NormalTok{cellCountsNoUnclassified <-}\StringTok{ }\NormalTok{cellCountsOverall[}\OperatorTok{!}\NormalTok{(}\KeywordTok{row.names}\NormalTok{(cellCountsOverall) }\OperatorTok{%in%}\StringTok{ }\NormalTok{drops), ]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lbls <-}\StringTok{ }\NormalTok{cellCountsOverall}\OperatorTok{$}\NormalTok{type}
+\NormalTok{pct <-}\StringTok{ }\KeywordTok{round}\NormalTok{(cellCountsOverall}\OperatorTok{$}\NormalTok{count}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(cellCountsOverall}\OperatorTok{$}\NormalTok{count)}\OperatorTok{*}\DecValTok{100}\NormalTok{)}
+\NormalTok{lbls <-}\StringTok{ }\KeywordTok{paste}\NormalTok{(lbls, pct, }\DataTypeTok{sep =} \StringTok{", "}\NormalTok{) }\CommentTok{# add percents to labels}
+\NormalTok{lbls <-}\StringTok{ }\KeywordTok{paste}\NormalTok{(lbls,}\StringTok{"%"}\NormalTok{,}\DataTypeTok{sep=}\StringTok{""}\NormalTok{) }\CommentTok{# add % to labels}
+\KeywordTok{pie}\NormalTok{(cellCountsOverall}\OperatorTok{$}\NormalTok{count, }\DataTypeTok{labels =}\NormalTok{ lbls, }\DataTypeTok{main =} \StringTok{"Overall Cell Counts"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ExpPHa04_4_CD300E-NOTCH3-CSF1R-PDGFRB-Proportions-Analysis_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lbls <-}\StringTok{ }\NormalTok{cellCountsNoUnclassified}\OperatorTok{$}\NormalTok{type}
+\NormalTok{pct <-}\StringTok{ }\KeywordTok{round}\NormalTok{(cellCountsNoUnclassified}\OperatorTok{$}\NormalTok{count}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(cellCountsNoUnclassified}\OperatorTok{$}\NormalTok{count)}\OperatorTok{*}\DecValTok{100}\NormalTok{)}
+\NormalTok{lbls <-}\StringTok{ }\KeywordTok{paste}\NormalTok{(lbls, pct, }\DataTypeTok{sep =} \StringTok{", "}\NormalTok{) }\CommentTok{# add percents to labels}
+\NormalTok{lbls <-}\StringTok{ }\KeywordTok{paste}\NormalTok{(lbls,}\StringTok{"%"}\NormalTok{,}\DataTypeTok{sep=}\StringTok{""}\NormalTok{) }\CommentTok{# add % to labels}
+\KeywordTok{pie}\NormalTok{(cellCountsNoUnclassified}\OperatorTok{$}\NormalTok{count, }\DataTypeTok{labels =}\NormalTok{ lbls, }\DataTypeTok{main =} \StringTok{"Cell Counts (Ignoring Unclassified)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ExpPHa04_4_CD300E-NOTCH3-CSF1R-PDGFRB-Proportions-Analysis_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\end{document}
